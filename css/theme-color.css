@@ -1,0 +1,189 @@
+/* Light Mode */
+
+[theme-color="light"] {
+  background: rgb(210, 210, 210);
+  background-image: linear-gradient(0deg, rgba(210, 210, 210, 1) 5%, rgba(183, 139, 187, 0.5102415966386555) 18%, rgba(15, 124, 126, 0.4318102240896359) 37%, rgba(210, 210, 210, 1) 69%, rgba(0, 108, 110, 0.2945553221288515) 87%, rgba(210, 210, 210, 1) 100%);
+}
+
+[theme-color="light"] input[type="text"], [theme-color="light"] input[type="date"], [theme-color="light"] select, [theme-color="light"] input[type="number"], [theme-color="light"] textarea {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+[theme-color="light"] input[type="text"]::placeholder, [theme-color="light"] input[type="number"]::placeholder, [theme-color="light"] textarea::placeholder, [theme-color="light"] input[type="date"], [theme-color="light"] select {
+  color: whitesmoke;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+[theme-color="light"] input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.6);
+}
+
+[theme-color="light"] header {
+  background: whitesmoke;
+  background: rgba(240, 240, 240, 0.25);
+  box-shadow: 1px 1px 30px 0 black;
+}
+
+[theme-color="light"] header button {
+  background-color: cadetblue;
+}
+
+[theme-color="light"] header button:before {
+  left: 0%;
+  content: '\f185';
+  background: whitesmoke;
+  border: 3px solid cadetblue;
+}
+
+[theme-color="light"] header span {
+  color: black;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+[theme-color="light"] #add-friendship {
+  background: whitesmoke;
+  background: rgba(240, 240, 240, 0.25);
+  color: black;
+  box-shadow: 1px 1px 20px 0 black;
+}
+
+[theme-color="light"] #add-person {
+  background: black;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: normal;
+}
+
+[theme-color="light"] .friend-delete {
+  background-color: whitesmoke;
+  background-color: rgba(240, 240, 240, 0.45);
+}
+
+[theme-color="light"] #friendships-delete h3, [theme-color="light"] #friendships-delete h2, [theme-color="light"] #friendships h3, [theme-color="light"] .friend-delete h4, [theme-color="light"] .fact h4 i {
+  color: initial;
+}
+
+[theme-color="light"] .person {
+  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+[theme-color="light"] .name-person figure {
+  border: 3px solid white;
+}
+
+@media screen and (min-width: 800px) {
+  [theme-color="light"] .fa-trash:hover {
+    color: #FF1919;
+  }
+  [theme-color="light"] .fa-check:hover {
+    color: #13B700;
+  }
+  [theme-color="light"] .fa-edit:hover {
+    color: #60B0D0;
+  }
+}
+
+[theme-color="light"] .name-person h4, [theme-color="light"] .fact h4, [theme-color="light"] b {
+  font-weight: bold;
+}
+
+/* Dark Mode */
+
+[theme-color="dark"] {
+  background: rgb(4, 35, 47);
+  background-image: linear-gradient( 360deg, rgba(4, 35, 47, 1) 9%, rgba(31, 91, 116, 1) 50%, rgba(0, 0, 0, 0.9500175070028011) 92%);
+}
+
+[theme-color="dark"] input[type="text"], [theme-color="dark"] input[type="date"], [theme-color="dark"] select, [theme-color="dark"] input[type="number"], [theme-color="dark"] textarea {
+  background-color: #60B0D0;
+  background-color: rgba(92, 176, 208, 0.75);
+}
+
+[theme-color="dark"] input[type="text"]::placeholder, [theme-color="dark"] input[type="number"]::placeholder, [theme-color="dark"] textarea::placeholder {
+  color: black;
+}
+
+[theme-color="dark"] header {
+  background: black;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 30px 0 #60b0d0;
+}
+
+[theme-color="dark"] header button {
+  background-color: #094977;
+}
+
+[theme-color="dark"] header button:before {
+  left: 40%;
+  content: '\f755';
+  background: black;
+  border: 3px solid #094977;
+}
+
+[theme-color="dark"] header span {
+  color: #5CB0D0;
+  color: rgba(92, 176, 208, 0.7);
+}
+
+[theme-color="dark"] #add-friendship {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #60B0D0;
+  color: rgba(92, 176, 208, 0.85);
+}
+
+[theme-color="dark"] #add-person {
+  background: #60B0D0;
+  background: rgba(92, 176, 208, 0.85);
+  font-weight: bold;
+}
+
+[theme-color="dark"] #friendships h3, [theme-color="dark"] #friendships-delete h3{
+  border-bottom: 1px solid;
+  border-bottom-color: whitesmoke;
+  border-bottom-color: rgba(255, 255, 255, 0.65);;
+}
+
+[theme-color="dark"] .friend-delete {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+[theme-color="dark"] #friendships-delete h3, [theme-color="dark"] #friendships-delete h2, [theme-color="dark"] #friendships h3, [theme-color="dark"] .friend-delete h4, [theme-color="dark"] .fact, [theme-color="dark"] .name-person, [theme-color="dark"] #all-friendships-deleted {
+  color: whitesmoke;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+[theme-color="dark"] .person {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.80);
+}
+
+[theme-color="dark"] .name-person figure {
+  border: 3px solid black;
+}
+
+@media screen and (min-width: 800px) {
+  [theme-color="dark"] .fa-trash:hover {
+    color: #AC0000;
+  }
+  [theme-color="dark"] .fa-check:hover {
+    color: #0E8600;
+  }
+  [theme-color="dark"] .fa-edit:hover {
+    color: #2C5D70;
+  }
+}
+
+[theme-color="dark"] .name-person h4, [theme-color="dark"] .fact h4, [theme-color="dark"] b {
+  font-weight: normal;
+}
+
+@media screen and (max-width: 280px) {
+  [theme-color="dark"] header button:before {
+    left: 36%;
+  }
+}

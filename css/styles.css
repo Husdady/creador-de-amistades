@@ -1,0 +1,140 @@
+:root {
+  --primary-color: rgba(255, 255, 255, 0.9);
+  --secondary-color: rgba(255, 255, 255, 0.7);
+  --th-color: rgba(255, 255, 255, 0.3);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  transition: background-image 5s linear;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #b7ccc4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  overflow: hidden;
+  width: 100%;
+}
+
+i {
+  padding: 10px;
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+}
+
+input[type="date"] {
+  outline: none;
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}
+
+select {
+  padding: 5px;
+}
+
+input[type="number"], input[type="date"] {
+  padding: 5px 15px;
+}
+
+textarea {
+  resize: none;
+  padding: 15px;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+  text-align: right;
+}
+
+input[type="text"], input[type="number"], textarea {
+  border-radius: 10px;
+}
+
+input[type="text"], input[type="date"], select, input[type="number"], textarea {
+  width: 55%;
+  margin: 10px 0;
+  border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="text"]:focus, input[type="date"]:focus select:focus, input[type="number"]:focus, button:focus {
+  border: none;
+  outline: none;
+}
+
+body input[type="text"]:focus::placeholder, body input[type="number"]:focus::placeholder, body textarea:focus::placeholder {
+  color: transparent;
+}
+
+button {
+  border: none;
+}
+
+button:active {
+  transform: scale(0.85);
+  background-color: inherit;
+}
+
+button:hover, i:hover, select:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.swal2-container button {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 15px !important;
+}
+
+@media screen and (max-width: 640px) {
+  input[type="text"], select, input[type="number"], input[type="date"], textarea {
+    width: 75%;
+  }
+  input[type="text"], input[type="number"], input[type="date"] {
+    text-align: initial;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  body, footer, .react-stars span {
+    font-size: 5vw !important;
+  }
+  i {
+    font-size: inherit;
+  }
+}
