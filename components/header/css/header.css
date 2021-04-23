@@ -1,0 +1,77 @@
+header {
+  padding: 1.5% 3.5%;
+  justify-content: space-between;
+  font-family: 'Gloria Hallelujah', cursive;
+  transition: .2s linear;
+}
+
+header, .logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 36px;
+}
+
+header span {
+  font-weight: normal;
+}
+
+header span:first-of-type {
+  font-size: 36px;
+}
+
+header span:last-of-type {
+  font-size: 24px;
+}
+
+header button {
+  border-radius: 20px;
+  display: table;
+  width: 50px;
+  height: 20px;
+  position: relative;
+}
+
+header button:active {
+  transform: none;
+}
+
+header button:before {
+  content: '';
+  display: flex;
+  color: #F89D07;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -25%;
+  border-radius: 50%;
+  transition: left .2s linear 0s;
+  will-change: transform;
+}
+
+@media screen and (max-width: 280px) {
+  header img {
+    width: 15%;
+  }
+  .logo {
+    width: 80%;
+  }
+  header button {
+    width: 17%;
+    height: 6vw;
+  }
+  header button::before {
+    width: 10vw;
+    height: 10vw;
+    top: -30%;
+  }
+  header span:first-of-type, header span:last-of-type {
+    font-size: inherit;
+  }
+}
