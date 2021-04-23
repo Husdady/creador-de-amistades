@@ -1,0 +1,16 @@
+footer{
+  text-align: center;
+  background: black;
+  line-height: 3.5;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Audiowide", system-ui, sans-serif;
+  font-size: 15px;
+}
+footer > a{
+  color: inherit;
+  text-decoration: none;
+}
+footer > a:hover{
+  text-decoration: underline;
+}
