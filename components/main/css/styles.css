@@ -1,0 +1,390 @@
+#container {
+  width: 95%;
+  max-width: 6000px;
+  margin: 3.5% auto 1.5%;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.35;
+}
+
+#container h3 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: normal;
+  font-size: 27px;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+
+/* Friendships of user */
+
+#friendships {
+  width: 100%;
+  max-width: 5000px;
+  margin: auto;
+}
+
+#friendships h3 {
+  margin-left: 20px;
+}
+
+#friendships h3, #friendships-delete h3 {
+  border-bottom: 1px solid black;
+}
+
+#content-person {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#all-friendships-deleted {
+  text-align: center;
+  font-family: 'Poiret One', sans-serif;
+  font-weight: normal;
+  width: 100%;
+  padding: 10% 0;
+  font-size: 36px;
+}
+
+#content-person, .content-delete {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+/* Card person */
+
+.person {
+  box-shadow: 0 4px 9px 2px rgba(0, 0, 0, 0.25);
+  /* color: rgba(0, 0, 0, 0.9); */
+  width: calc(33.33% - 20px);
+  margin: 0 10px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 2000px;
+  display: table;
+}
+
+.content-person {
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.content-person::-webkit-scrollbar {
+  display: none;
+}
+
+.person figure {
+  position: relative;
+}
+
+.image-person {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Name and Img of Card person */
+
+.name-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -75px;
+  position: relative;
+}
+
+.name-person figure {
+  overflow: hidden;
+  display: table;
+  margin: 0 auto;
+  width: 125px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 125px;
+  background-size: cover;
+  background-position: center;
+}
+
+.name-person figure:hover {
+  cursor: pointer;
+}
+
+.name-person h4 {
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.name-person span{
+  width: 100%;
+}
+
+.name-person p {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  word-break: break-all;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Information of Card person */
+
+.fact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 85%;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+}
+
+.fact h4 {
+  width: 100%;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.fact h4:last-child {
+  text-align: right;
+}
+
+.information-person .fact:last-of-type {
+  border-bottom: none;
+}
+
+.fact h4 i {
+  padding: 0;
+}
+
+.fact h4 span {
+  font-weight: normal;
+}
+
+/* Assessment person */
+
+.assessment {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Icons */
+
+.fa-edit, .fa-check {
+  right: 6%;
+}
+
+.fa-trash {
+  right: 0;
+}
+
+.fa-edit, .fa-trash, .fa-check {
+  top: 32%;
+  position: absolute;
+  color: inherit;
+}
+
+#messageForDeleteFriend, #newFriendAdded, #applyChanges, #deleteHistory {
+  margin: 0;
+}
+
+#completeAll, #textareaLimit {
+  margin: 0 0 20px;
+  letter-spacing: 2px;
+}
+
+#messageForDeleteFriend, #applyChanges, #completeAll, #textareaLimit, #newFriendAdded, #deleteHistory {
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: normal;
+}
+
+#check {
+  color: #12A002;
+  padding: 0;
+}
+
+#check:hover {
+  cursor: initial;
+}
+
+.image-person .edit-image, .name-person .edit-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-person .edit-image {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.name-person .edit-image {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.files {
+  display: none;
+}
+
+.image-person .load-image:before {
+  font-size: 60px;
+  margin-bottom: 120%;
+  color: rgba(0, 0, 0, 0.85);
+  display: block;
+}
+
+.name-person .load-image:before {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.load-image:before {
+  content: '\f030';
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: bold;
+}
+
+.load-image:hover:before {
+  cursor: pointer;
+}
+
+#applyChanges {
+  font-size: 26px;
+  font-family: 'Electrolize', sans-serif;
+  color: rgba(255, 255, 255, 0.65)
+}
+
+#apply-changes-check {
+  position: relative;
+}
+
+.fa-times, #apply-changes-check {
+  padding: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+}
+
+/* Valoracion de estrellas */
+
+.assessment {
+  display: flex;
+  justify-content: center;
+}
+
+.react-stars:focus {
+  outline: none;
+}
+
+.react-stars span {
+  content: '\f005';
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  padding: 10px;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (max-width: 1185px) {
+  #friendships {
+    padding-left: 0;
+    padding: 0 2%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #friendships {
+    padding: 0;
+  }
+  #friendships h3 {
+    margin-left: 0;
+  }
+  .person {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 500px;
+    display: table;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .person {
+    width: calc(50% - 10px);
+    margin: 0 5px 20px;
+  }
+  .image-person {
+    height: 160px;
+  }
+  .name-person {
+    margin-top: -50px;
+  }
+  .name-person figure {
+    width: 100px;
+    height: 100px;
+  }
+  .fa-edit, .fa-trash, .fa-check {
+    top: 25%
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .person {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .image-person {
+    height: 140px;
+  }
+  .name-person figure {
+    width: 80px;
+    height: 80px;
+  }
+  .name-person {
+    margin-top: -40px;
+  }
+  .fa-edit, .fa-trash, .fa-check{
+    top: 20%;
+  }
+  .fa-edit, .fa-check{
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .content-person {
+    height: 80vh;
+  }
+  .name-person {
+    margin-top: -12%;
+  }
+  .name-person figure {
+    width: 20%;
+    height: 20vw;
+  }
+  .image-person {
+    height: 20vh;
+  }
+  #add-friendship h3, #friendships h3, #friendships-delete h3, .fact h4, .name-person p, #friendships-delete h2, #all-friendships-deleted {
+    font-size: inherit;
+  }
+}

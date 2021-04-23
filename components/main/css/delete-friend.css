@@ -1,0 +1,140 @@
+/* Delete friendships */
+
+#friendships-delete {
+  width: 64%;
+  max-width: 4000px;
+  height: 100vh;
+  max-height: 1600px;
+  padding-left: 3.5%;
+}
+
+#friendships-delete h2 {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  padding: 25% 0;
+}
+
+#friendships-delete h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#friendships-delete button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: darkred;
+  color: wheat;
+  background-color: rgba(168, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.content-delete {
+  max-height: 1000px;
+  overflow-x: scroll;
+}
+
+.content-delete::-webkit-scrollbar, textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.friend-delete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+  padding: 1.5% 0 1.5% 3.5%;
+  margin-bottom: 15px;
+}
+
+.friend-delete:last-of-type {
+  margin-bottom: 0;
+}
+
+.friend-delete figure {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.friend-delete h4 {
+  margin: 0;
+  font-weight: normal;
+  padding-left: 2%;
+  letter-spacing: 2px;
+  width: 94%;
+  font-size: 16px;
+}
+
+#danger {
+  color: darkred;
+  padding: 5px;
+  text-align: center;
+  color: rgb(229, 37, 37);
+}
+
+@media screen and (max-width: 1185px) {
+  #friendships-delete {
+    width: 100%;
+    padding-left: 0;
+  }
+  .content-delete {
+    max-height: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .friend-delete {
+    padding: 2% 0 2% 3.5%
+  }
+  .friend-delete h4 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #friendships-delete{
+    height: auto;
+  }
+  #friendships-delete button {
+    display: block;
+    width: 100%;
+    padding: 17px 0;
+    margin-top: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .friend-delete h4 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .friend-delete figure {
+    margin: 5px auto 7px;
+  }
+  .friend-delete h4 {
+    padding-left: 0;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .friend-delete figure {
+    width: 12%;
+    height: auto;
+  }
+  .friend-delete h4, #friendships-delete button, #friendships-delete h2 {
+    font-size: inherit;
+  }
+}

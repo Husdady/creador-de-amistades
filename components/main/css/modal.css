@@ -1,0 +1,44 @@
+#wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrap img{
+  width: 250px;
+  margin: auto;
+  display: block;
+  color: white;
+  color: rgba(255,255,255,0.65);
+  object-fit: scale-down;
+  height: 250px;
+}
+
+#cancel {
+  position: absolute;
+  top: 1.5%;
+  right: 3.5%;
+  font-size: 48px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 480px) {
+  #cancel {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 280px){
+  #cancel {
+    font-size: inherit;
+  }
+}

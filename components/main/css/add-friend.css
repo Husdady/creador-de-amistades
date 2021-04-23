@@ -1,0 +1,102 @@
+#add-friendship {
+  width: 36%;
+  padding: .5% 1.5% 3%;
+  border-radius: 10px;
+  height: 100vh;
+  max-height: 1600px;
+  overflow-y: scroll;
+  max-width: 2000px;
+  transition: .2s linear;
+}
+
+#add-friendship::-webkit-scrollbar {
+  display: none;
+}
+
+#add-friendship h3 {
+  padding: 0 3%;
+}
+
+#add-friendship form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Electrolize', sans-serif;
+}
+
+#add-friendship span {
+  width: 45%;
+  margin: 10px 0;
+  display: table;
+}
+
+#add-person {
+  padding: 15px 0;
+  width: 100%;
+  border-radius: 20px;
+  display: table;
+  margin: 20px auto 0;
+  font-family: 'Poiret One', sans-serif;
+}
+
+#add-person:before {
+  content: '\f055';
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1185px) {
+  #add-friendship {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #add-friendship {
+    padding: .5% 3% 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #add-friendship {
+    width: 100%;
+    height: 700px;
+    overflow-y: scroll;
+    padding-bottom: 35px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #add-friendship form {
+    justify-content: center;
+  }
+  #add-friendship span {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .friend-delete h4 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .friend-delete img {
+    margin: 5px auto 7px;
+  }
+  .friend-delete h4 {
+    padding-left: 0;
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  #add-friendship {
+    height: 80vh;
+  }
+}
