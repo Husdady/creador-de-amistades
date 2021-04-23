@@ -1,0 +1,48 @@
+/* Fonts_types */
+@font-face {
+  font-family: 'Audiowide';
+  src: url('fonts/Audiowide-Regular.woff2') format('woff2'), url('fonts/Audiowide-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('fonts/BigShouldersDisplay-Regular.woff2') format('woff2'), url('fonts/BigShouldersDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Electrolize';
+  src: url('fonts/Electrolize-Regular.woff2') format('woff2'), url('fonts/Electrolize-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url('fonts/GloriaHallelujah-Regular.woff2') format('woff2'), url('fonts/GloriaHallelujah-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hanalei';
+  src: url('fonts/Hanalei-Regular.woff2') format('woff2'), url('fonts/Hanalei-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poiret One';
+  src: url('fonts/PoiretOne-Regular.woff2') format('woff2'), url('fonts/PoiretOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
